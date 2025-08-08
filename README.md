@@ -9,6 +9,7 @@ This document outlines the major bugs that were discovered and resolved in the L
 ### 1. Duplicate Confirmation Email Function Call Removed
 
 **File**: [`src/components/LeadCaptureForm.tsx`](src/components/LeadCaptureForm.tsx)  
+
 **Severity**: Major  
 **Status**: Fixed
 
@@ -76,6 +77,7 @@ const chartId = `chart-${
 ### 3. Edge Function: Non-2xx Status & Email Not Sent
 
 **File**: [`supabase/functions/send-confirmation/index.ts`](supabase/functions/send-confirmation/index.ts)
+
 **Severity**: Critical  
 **Status**: Fixed
 
@@ -109,7 +111,8 @@ The confirmation email function returned a non-2xx status code, causing the clie
 
 ### 4. Lead Data Not Persisted in Database
 
-**File**: [`supabase/functions/send-confirmation/index.ts`](supabase/functions/send-confirmation/index.ts)
+**File**: [`src/components/LeadCaptureForm.tsx`](src/components/LeadCaptureForm.tsx)  
+
 **Severity**: Major  
 **Status**: Fixed
 
